@@ -6,14 +6,14 @@ const app = express();
 
 
 //setting 
-app.set("port", 3000 || process.env.PORT);
+app.set("port", process.env.PORT || 3000);
 
 //midlewars
 app.use(express.urlencoded({extended: false}));
-app.use(express.json)
+app.use(express.json())
 
 //Routes
-app.use(require('./routes'));
+app.use('/api', require('./routes'));
 
 app.listen(app.get('port'), ()=>{
     console.log(`Server on port ${app.get('port')}`);
