@@ -1,8 +1,8 @@
 module.exports = {
     database: {
-        host: 'por definirse',
-        user: 'por definirse',
-        password: 'por definirse',
-        database: 'por definirse'
+        host: process.env.HOST,
+        user: process.env.USER,
+        password: process.env.PASSWORD,
+        database: process.env.DATABASE
     }
 }
