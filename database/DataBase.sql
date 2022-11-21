@@ -128,5 +128,3 @@ ALTER TABLE trabajo_detalle ADD CONSTRAINT fk_usuario_trabajo_detalle FOREIGN KE
 ALTER TABLE categoria_detalle ADD CONSTRAINT fk_usuario_categoria_detalle FOREIGN KEY (usuario_id) REFERENCES usuario(usuario_id);
 
 /* FIN DE LAS RELACIONES FK */
-
-
