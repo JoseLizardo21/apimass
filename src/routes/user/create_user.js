@@ -1,6 +1,7 @@
 const {Router} = require('express');
 const router = Router();
 
-router.use('/signIn', require('./signIn/createAccount.js'));
+router.get('/user', (req, res)=>{
+});
 
 module.exports = router;
