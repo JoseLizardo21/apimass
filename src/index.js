@@ -17,7 +17,11 @@ require('./database');
 app.get('/users/Jose/repos', (req,res)=>{
     res.json([
         {id: 1, name: "Jose"},
-        {id: 2, name: "Lizardo"}
+        {id: 2, name: "Lizardo"},
+        {id: 3, name: "Rosales"},
+        {id: 4, name: "Anuel"},
+        {id: 5, name: "Ricardo"}
+
     ]);
 });
 
