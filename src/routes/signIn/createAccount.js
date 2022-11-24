@@ -4,7 +4,12 @@ const pool = require('../../database');
 const router = Router();
 const helpers = require('../../lib/helpers');
 
-router.post('/', async (req, res)=>{
+router.post('/n', (req, res)=>{
+    console.log(req.body.usuario_nombre)
+    res.send("se envió");
+})
+
+/* router.post('/', async (req, res)=>{
     try {
         const { usuario_nombre, usuario_apellido, usuario_numero, usuario_email, usuario_password, usuario_token, usuario_create, usuario_update } = req.body;
         const user = {
@@ -17,13 +22,6 @@ router.post('/', async (req, res)=>{
             usuario_create,
             usuario_update,
         }
-
-        /*
-        check('usuario_dni')
-        .length(8)
-        .isString()
-        .isNumeric()
-        */
 
         user.usuario_create = await helpers.getDateNow();
         
@@ -38,11 +36,12 @@ router.post('/', async (req, res)=>{
     
         await pool.query('INSERT INTO usuario set ?', [user]);
     
+        console.log(user);
         res.send("user");
         
     } catch (error) {
         res.send(error);
     }
 });
-
+ */
 module.exports = router;

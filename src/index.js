@@ -14,6 +14,13 @@ app.use(express.json());
 require('./database');
 
 //Routes
+app.get('/users/Jose/repos', (req,res)=>{
+    res.json([
+        {id: 1, name: "Jose"},
+        {id: 2, name: "Lizardo"}
+    ]);
+});
+
 app.use('/api', require('./routes'));
 
 app.listen(app.get('port'), ()=>{
