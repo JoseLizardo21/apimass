@@ -20,8 +20,8 @@ app.get('/users/Jose/repos', (req,res)=>{
         {id: 2, name: "Lizardo"},
         {id: 3, name: "Rosales"},
         {id: 4, name: "Anuel"},
-        {id: 5, name: "Ricardo"}
-
+        {id: 5, name: "Ricardo"},
+        {id: 6, name: "Manuel"}
     ]);
 });
 
