@@ -4,11 +4,6 @@ const pool = require('../../database');
 const router = Router();
 const helpers = require('../../lib/helpers');
 
-router.post('/n', (req, res)=>{
-    console.log(req.body.usuario_nombre)
-    res.send("se envió");
-})
-
 /* router.post('/', async (req, res)=>{
     try {
         const { usuario_nombre, usuario_apellido, usuario_numero, usuario_email, usuario_password, usuario_token, usuario_create, usuario_update } = req.body;

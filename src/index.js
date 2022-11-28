@@ -25,6 +25,10 @@ app.get('/users/Jose/repos', (req,res)=>{
     ]);
 });
 
+app.post('/env', (req, res)=>{
+    console.log(req.body);
+});
+
 app.use('/api', require('./routes'));
 
 app.listen(app.get('port'), ()=>{
