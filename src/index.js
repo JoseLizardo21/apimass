@@ -26,6 +26,7 @@ app.get('/users/Jose/repos', (req,res)=>{
 });
 
 app.post('/env', (req, res)=>{
+    res.json({id: 1, name: "Jose"})
     console.log(req.body);
 });
 
