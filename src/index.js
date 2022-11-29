@@ -29,8 +29,8 @@ app.post('/env', (req, res)=>{
     console.log(req.body);
     res.json([
         {id: 1, name: "Jose"},
-        {id: 1, name: "Jose"},
-        {id: 1, name: "Jose"}
+        {id: 2, name: "Lizardo"},
+        {id: 3, name: " Manuel"}
     ])
 });
 
