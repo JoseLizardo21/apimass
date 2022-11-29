@@ -27,7 +27,11 @@ app.get('/users/Jose/repos', (req,res)=>{
 
 app.post('/env', (req, res)=>{
     console.log(req.body);
-    res.json({id: 1, name: "Jose"})
+    res.json([
+        {id: 1, name: "Jose"},
+        {id: 1, name: "Jose"},
+        {id: 1, name: "Jose"}
+    ])
 });
 
 app.use('/api', require('./routes'));
